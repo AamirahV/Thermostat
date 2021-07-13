@@ -26,4 +26,4 @@ class PowerSaving {
   }
 }
 
-module.exports = PowerSaving
+// module.exports = PowerSaving

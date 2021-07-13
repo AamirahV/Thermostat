@@ -1,4 +1,4 @@
-const PowerSaving = require('./PowerSaving.js')
+// const PowerSaving = require('./PowerSaving.js')
 
 class Thermostat {
   constructor () {
@@ -54,4 +54,4 @@ class Thermostat {
   }
 }
 
-module.exports = Thermostat
+// module.exports = Thermostat

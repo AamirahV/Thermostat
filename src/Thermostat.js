@@ -50,13 +50,14 @@ class Thermostat {
     let colouredUsage = ''
     if (this._temperature < 18) {
       colouredUsage = 'low usage'
-      return colouredUsage.fontcolor('green')
+      return colouredUsage.element.style.color('green')
     } else if (this._temperature <= 25) {
-      colouredUsage = 'medium usage'
-      return colouredUsage.fontcolor('black')
+      colouredUsage =  'medium usage'
+      colouredUsage.fontcolor = "F0F"
+      return colouredUsage
     } else {
-      colouredUsage = 'high usage'
-      return colouredUsage.fontcolor('red')
+      colouredUsage=  'high usage'
+      return colouredUsage.style.color('red')
     }
   }
 }

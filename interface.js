@@ -6,11 +6,13 @@ window.addEventListener('load', function() {
     const buttonDecrease = document.getElementById("decreaseTemp")
     const resetTemp = document.getElementById("resetTemp")
     const powerSave = document.getElementById("powerSave")
+    const currentUsage = document.getElementById("currentUsage")
 
     // add a <span> element to your html with id of 'message'
     const message = document.getElementById("message")
     message.innerText = thermostat.checkTemperature()
-  
+    const current = document.getElementById("current")
+    
     buttonIncrease.addEventListener('click', event => {
       // when the click event happens, update the `innerText` of the message element
       // to display the updated temperature
@@ -60,6 +62,13 @@ window.addEventListener('load', function() {
       }
       else {console.log("catcher for null")}
             
+
+    })
+    currentUsage.addEventListener("click", function() {
+      current.innerText = thermostat.currentUsage()
+      
+      
+
 
     })
 

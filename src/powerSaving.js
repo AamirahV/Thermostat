@@ -1,6 +1,7 @@
 class PowerSaving {
   constructor () {
     this.currentState = true
+   
   }
 
   checkState () {

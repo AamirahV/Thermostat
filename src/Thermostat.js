@@ -33,10 +33,17 @@ class Thermostat {
 
   turnOff () {
     this.powerSaving.turnOff()
+    return this.powerSaving.checkState()
   }
 
   turnOn () {
     this.powerSaving.turnOn()
+    return this.powerSaving.checkState()
+  }
+
+  getPowerSavingState()
+  { 
+    return this.powerSaving.checkState()
   }
 
   currentUsage () {

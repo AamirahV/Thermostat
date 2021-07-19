@@ -15,5 +15,16 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
     "jasmine": "^3.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AamirahV/Thermostat.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AamirahV/Thermostat/issues"
+  },
+  "homepage": "https://github.com/AamirahV/Thermostat#readme",
+  "dependencies": {
+    "jquery": "^3.6.0"
   }
 }

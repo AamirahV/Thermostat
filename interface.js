@@ -66,7 +66,7 @@ window.addEventListener('load', function() {
          buttonCurrentUsage.style.backgroundColor = 'green'
        }
        else if (thermostat.currentUsage() === 'medium usage') {
-        buttonCurrentUsage.style.backgroundColor = 'orange'
+        buttonCurrentUsage.style.backgroundColor = 'yellow'
       }
       else { buttonCurrentUsage.style.backgroundColor = 'red'
       } 

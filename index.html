@@ -4,14 +4,47 @@
     <head> 
         <link rel="stylesheet" href = "https://www.w3schools.com/w3css/4/w3.css"">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style> button {text-align : center;}
-                div {text-align : center;
-                position : fixed;
-                top: 50%;
-                left: 50%;
+        <style> body {background-color: aquamarine;}
+                #thermostat {text-align: center;
+                position: fixed;
+                top: 20%;
+                left: 30%;
+                margin-top: -50px;
+                margin-left: -50px;
+                font-size: 50px;
+                font-weight: bold;
+                color: black;
+                font-family: castellar;}
+                #thermostatTemp{text-align: center;
+                font-size: 30px;
+                top: 45%;
+                left: 37%;
                 margin-top: -50px;
                 margin-left: -50px;}
-                .powerSave{background-color: rgb(green);}
+                #message {text-align: center;
+                font-size: 100px;
+                font-family: AR Darling;
+                color: darkblue;
+                top: 45%;
+                left: 37%;
+                margin-top: 30px;
+                margin-left: -70px;}
+                button {text-align : center;
+                font-weight: bold;}
+                div {text-align : center;
+                position : fixed;
+                top: 45%;
+                left: 37%;
+                margin-top: -50px;
+                margin-left: -50px;}
+                #current {text-align: center;
+                top: 55%;
+                left: 37%;
+                margin-top: 450px;
+                margin-left: 0px;
+                font-family: castellar;
+                font-size: 20px;
+                font-weight: bold;}
                                 
                 
         </style>
@@ -28,16 +61,15 @@
 </header>
 
 
-<h1 id= "thermostatTemp"> </h1>
 <div>
-    <p>Thermostat temperature: </p>
+    <p id= "thermostatTemp">Thermostat temperature: </p>
     <p id='message'></p> 
-
 <button id="increaseTemp">Increase</button>
 <button id="decreaseTemp">Decrease</button>
 <button id="resetTemp">Reset</button>
 <button id="powerSave" class= "powerSave" >Power Save</button>
 <button id="buttonCurrentUsage">Current Usage</button>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="./src/Thermostat.js"></script>
 <script src="./src/powerSaving.js"></script>
     <script src="./interface.js"></script>
